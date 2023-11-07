@@ -582,9 +582,8 @@ footer {
     font-size: 13px;
   }
   .thumbnail {
-    height: 100%;
-    padding: 3px;
     height: fit-content;
+    padding: 3px;
     display:block;
   }
   footer{
