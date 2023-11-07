@@ -582,9 +582,16 @@ footer {
     font-size: 13px;
   }
   .thumbnail {
-    height: fit-content;
     padding: 3px;
     display:block;
+    width: 100%;
+    height: 100%;
+  }
+  .thumbnail img {
+    padding: 3px;
+    display:block;
+    width: 100%;
+    height: 100%;
   }
   footer{
     background-color: #44403e; /*ändrade bakgrundsfärgen på min footer*/
