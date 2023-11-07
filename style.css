@@ -1,0 +1,594 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+/*jag har valt att använda mig av fonten Poppins på min sida. tilläpar detta på allt genom att sätta
+en stjärna här*/
+body {
+  background-color: #5d5257;
+  width: 100%;
+}
+main {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  background-image: url("bilder/backround2.jpg");
+  background-size: 100%;
+  padding-top: 40px; 
+  padding-bottom: 40px;
+}
+/* ville ha en bakgrundsbild som header och la in den i min css*/
+
+.lankar {
+  display: flex;
+  text-align: center;
+}
+
+.lankar a {
+  border-radius: 10px; 
+  background-color: #363035;
+  font-size: 10px;
+  display: inline-block;
+  margin: 0 43px;
+  border: 1px solid;
+  border-color:#958c85;
+  text-decoration: none;
+  padding: 2px 50px; 
+  color:#aba5a8; 
+}
+
+.lankar a:hover {
+  background-color:#867b73;
+  transition: 0.5s;
+}  
+/* länkarna ville jag ha under headern. jag har valt att göra en hover effekt på dem så att de byter färg
+när jag klickar där. ikonerna bredbid länkarna las in i html filen direkt*/
+
+.under-header {
+  margin: 10px;
+}
+
+iframe[src="https://www.youtube.com/embed/9XaS93WMRQQ?autoplay=1"] {
+  position: absolute;
+  display: grid;
+}
+
+/*i min header ville jag göra något eget. länkade till en bra låt på youtube jag tycker passar
+min estetik på sidan. ville ha den i mitten av min header*/
+
+p {
+  font-size: 13px;
+  color:#ffffff  
+}
+
+p.container {
+  text-align: center;
+  font-size:12px;
+  color:#ffffff
+  
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container li {
+  font-size: 12px;
+  color:#ccc;
+  
+}
+.left-box,
+.middle-box,
+.right-box {
+  background-color: #504a4f;
+  padding: 40px;
+  border: 1px solid #ccc; 
+  margin: 25px; 
+  box-sizing: border-box;
+}
+/* eftersom att jag ville att mina tre boxar skulle ha samma preferens och färg satte jag in dom i samma stycke*/
+.left-box p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.middle-box p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.right-box p {
+  text-align: center;
+  font-size: 11px;
+  color:#ccc 
+}
+.right-box h3 {
+  text-align: center;
+  font-size: 12px;
+  margin:15px;
+  color:#ffffff 
+}
+
+#Mittenbild{ 
+  box-shadow:#363035 7px 7px 7px 7px;
+  border:1px;
+  border-style: solid;
+  width: 76%;
+  height: 82%;
+  border-radius: 100%;
+  object-fit:fixed;
+  display: grid;
+  margin: 0 auto;
+  border-color:#ccc;
+
+}
+#Mittenbild2 {
+  box-shadow:#343232 5px 5px 5px 5px;
+  border-style: 3px solid;
+  border-radius: 100%;
+  object-fit:fixed;
+  margin: 0 auto;
+  height:100%;
+  display: grid;
+  border-color:#ccc;
+  filter: grayscale(90%);
+}
+img {
+  margin-left: 10px;
+  border: 2px solid #ccc;
+  border-radius: 1px;
+}
+
+img:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s;
+  filter:contrast(105%);
+}
+
+/*ville att bilden på mig skulle kunnas göra lite större när man lägger pekaren på den. men inte lika stor som 
+mina övriga bilder. */
+
+.center-container,
+.right-container {
+  background-color: #454044;
+  padding: 20px;
+  border: 1px solid #ccc;
+  height: 560px;
+  display: grid;
+}
+
+.middlecontent {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+}
+/*jag ville ha mina boxar bredvid varandra så jag använde mig av grid-template-columns: 1fr 1fr;*/
+
+.center-container {
+  float: left;
+  height: 560px; 
+  overflow-y: auto; 
+  display: block;
+  box-sizing: border-box;
+}
+
+.center-container h3 {
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 7px 7px 7px #302c2e;
+  border: 0px solid;
+  padding: 15px;
+  color: #dad3d2;
+  position: relative;
+
+}
+.center-container p {
+  text-align: center;
+  margin-top: 20px;
+  margin-left:15%;
+  font-size: 12px;
+  border: 1px solid;
+  border-color: #cfcfcf;
+  padding: 40px;
+  color:#cfcfcf;
+  max-width: 300px;
+}
+
+.right-container {
+  display: block;
+  float: right;
+  height: 560px;
+  overflow-x: scroll; 
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  height: 400px;
+  padding: 3px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  width: 60%; 
+  transition: transform 0.3s;
+  box-shadow: 5px 5px 5px 5px #2d292c;
+  border: 2px solid #282628;
+  border-radius: 0px;
+  display:block;
+}
+/*så att man kunde få möjlighet att förstora bilderna satte jag in en transition: transform 0.3s;på en skala
+av 1:5 */
+
+.thumbnail:hover {
+  transform: scale(1.5);
+}
+
+main {
+  width: 100%;
+}
+
+.content p {
+ font-size: 12px;
+ letter-spacing: 2px;
+ box-shadow: 8px 8px 8px #373135;
+ margin-top: 50px;
+ border: 0px solid;
+ background-color:#454044;
+ padding: 30px;
+ color:#ccc;
+}
+.content {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  color:#fff
+}
+
+ul {
+  text-align: left;
+  list-style-type:circle;
+  color:#fff
+ }
+
+li {
+  margin-left: 10%;
+  font-size: 12px;
+  margin: 4%;
+  color:#ccc 
+}
+.endwords h4 {
+  text-align: center; 
+  color: #ccb4a6;
+  font-size: 20px;
+}
+
+.endwords p{
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.endwords {
+  text-align:center; 
+  align-content: center;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 18px;
+  color: #ccb4a6;
+}
+.KONTAKT {
+  padding:5%; 
+  text-align: center;
+}
+.KONTAKT a {
+  padding: 20px;
+  border: 1px solid;
+  font-size: 12px;
+  font-weight:bold;
+  color:#ccc;
+}
+.KONTAKT a:hover {
+  background-color:#453f44;
+  transition: 0.3s;
+}
+
+<!--KONTAKTFORMULÄR-->
+.contact-form label {
+  margin-top: 2%;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color:#ccb4a6;
+}
+
+.contact-form {
+  text-align: center;
+  align-content: center;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="message"] {
+  border:#44403e 3px solid;
+  background-color:#ccc;
+  align-self: center;
+  width: 20%;
+}
+.contact-form h3 {
+  text-align: center;
+  font-size: 15px;
+  color:#ccb4a6;
+}
+  
+.contact-form textarea {
+  border:#44403e 3px solid;
+  background-color:#ccc;
+  width: 30%;
+}
+.contact-form label{
+  font-size: 12px;
+  display: block;
+  width: 100%;
+}
+.contact-form button {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 10%;
+  font-size: 12px;
+  color: #ccc;
+  background-color:#5d5257;
+}
+
+.contact-form button:hover {
+  color:#504a4f;
+  background-color:#958c85;
+}
+/*kontaktformuläret ville jag ha som en ny länk till en ny sida. så jag la in det i en box och placerade den centralt*/
+
+footer {
+  display:grid;
+  width:100%;
+  padding:1rem;
+  color:#ccc;
+  text-align: center;
+  background-color:#453f44
+}
+.fa-palette {
+  margin-left: 10px;
+  font-size: large;
+  color:#ccc    
+}
+
+@media screen and (max-width: 950px) { 
+  header {
+    display: grid;
+    width: 100%;
+    max-height: 10vh;
+  }
+  iframe{
+    display: none;
+  }
+  /*jag ville inte ha en youtube video på min mobil version av sidan. så jag tog bort den genom att skriva display: none;*/
+  .lankar{
+    display: block;
+    align-content: center;
+  }
+   .lankar a { 
+    background:#958c85;
+    color: #383337;
+    font-size: 12px;
+    margin: 25px;
+    border: 4px;
+    border-color: #aba5a8;
+    padding: 2px;
+  }
+  /*jag ville att länkarna skulle vara mer kompakta på min responsiva version av sidan. så jag gjorde dom mer centrerade och mindre*/
+  .lankar a:hover {
+  background-color:#867b73;
+  transition: 0.5s;
+  }
+  #Mittenbild2 {
+    display: none;
+  }
+
+  .container {
+  display:block;
+  }
+  .right-box {
+   display: block;
+  }
+  .middlecontent {
+   display:flex;
+   width: 100%;
+  }
+  .middle-box {
+   display: contents;
+  }
+  .middle-box p {
+   font-size: 12px;  
+  }
+  #Mittenbild{
+   max-width: 50%;
+   max-height: 50%;
+  }
+  /*här ville jag att bilden inte skulle vara i en "box" och endast synas som en bild. så jag tog bort boxen*/
+  .endwords p{
+    text-align: center;
+  }
+  .endwords h4 {
+    text-align: center; 
+    color:#a69d99;
+    font-size: 20px;
+  }
+  .endwords{
+    max-width: fit-content;
+  }
+  .KONTAKT{
+    padding: 10%;
+  }
+  .KONTAKT a{
+    padding:3%;
+    font-size: 13px;
+  }
+  .middlecontent{
+    display:block;
+    max-width: fit-content;
+    max-height: fit-content; 
+  }
+  .center-container{
+    float:right;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  .center-container p {
+    margin-left: 0%;
+    text-align:center;
+    align-self: center;
+    font-size: 11px;
+    min-width:fit-content;
+  }
+  .right-container {
+    float:right;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    width:fit-content;
+    max-height: min-content;
+  }
+  /*har gjort så att mina boxar inte är bredvid varandra utan under varandra på min mobil version av sidan*/
+  .thumbnail {
+    height: 100%;
+    padding: 3px;
+    height: fit-content;
+    display:block;
+  } 
+}
+
+@media screen and (max-width: 650px) { 
+  
+  header {
+    display: grid;
+    width: 100%;
+    max-height: 10vh;
+  }
+  iframe{
+    display: none;
+  }
+  body{
+    background-color:#696563;
+    /*ändrade bakrundsfärgen på mobilversionen*/
+  }
+  .lankar{
+    display: block;
+    align-content: center;
+  }
+  .lankar a { 
+    color:#ccc;
+    background:none;
+    font-size: 10px;
+    margin: 3px;
+    border: 4px;
+    padding: 2px;
+  }
+
+  /* ändrat länkarna utifrån om man ser sidan på en telefon. gjort dom mindre och simplare utan bakgrundsfärg*/
+  .lankar a:hover {
+  background-color:#66535c;
+  transition: 0.5s;
+  }
+  .content p {
+    background-color: #5b5654;
+  }
+ .container {
+  display:block;
+  }
+  .left-box{
+    display: block;
+    background-color: #5b5654;
+  }
+  .right-box {
+   display: block;
+   background-color: #5b5654;
+  }
+  /* här har jag ändrat färgen på bakgrunden på mina boxar som matchar min bakgrund */
+  .middlecontent {
+   display:flex;
+   width: 100%;
+   
+  }
+  .middle-box {
+   display: contents;
+  }
+  .middle-box p {
+   font-size: 12px;  
+  }
+  #Mittenbild{
+   max-width: 50%;
+   max-height: 50%;
+  }
+  .endwords p{
+    text-align: center;
+  }
+  .endwords h4 {
+    text-align: center;
+    border-color: #a69d99;
+    text-align: center; 
+    color: #a69d99;
+    font-size: 20px;
+  }
+  .endwords{
+    align-self: center;
+  }
+  .middlecontent{
+    display:block;
+    max-width: fit-content;
+    max-height: fit-content; 
+  }
+  .center-container{
+    background-color: #5b5654;
+    float:right;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  .center-container p {
+    margin-left: 0%;
+    text-align:center;
+    align-self: center;
+    font-size: 11px;
+    min-width:fit-content;
+  }
+  .right-container {
+    background-color: #5b5654;
+    float:right;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    width:fit-content;
+    max-height: min-content;
+  }
+  /*även här ändrade jag bakgrundsfärgen på boxarna*/
+  .KONTAKT{
+    padding: 10%;
+  }
+  .KONTAKT a{
+    padding:3%;
+    font-size: 13px;
+  }
+  .thumbnail {
+    height: 100%;
+    padding: 3px;
+    height: fit-content;
+    display:block;
+  }
+  footer{
+    background-color: #44403e; /*ändrade bakgrundsfärgen på min footer*/
+  }
+  
+}

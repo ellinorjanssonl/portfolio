@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!--kopierar länk från min css kod så det kommer ut på hemsidan sen-->
+  <title>Hemsida</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--den här länken var nödvändig för att
+  kunna få in en ikon under mitt kontaktforum. utan den här länken funkade den inte-->
+</head>
+<body>
+  <header>
+    <div>
+    <iframe src="https://www.youtube.com/embed/QzlcxmVBIFo?si=JSQCbR60rh-dcUT5&amp;autoplay=1">
+    </iframe>
+    </div>
+      <!--jag ville ha en video i min header så jag valde att lägga in en iframe med en video från youtube.
+      så man kan lyssna på musik om man vill-->
+  </header> 
+  <main>
+    <div class ="under-header">
+    </div>
+     <!-- jag la in den här klassen (class) för att kunna skapa ett mellanrum mellan min header och min main. -->
+
+    <div class="lankar">
+      <a href="https://www.instagram.com" target="_blank">INSTAGRAM. <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank">FACEBOOK. <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.google.se" target="_blank">GOOGLE. <i class="fa-brands fa-google"></i></a>
+            <a href="https://www.lardigteckna.blogg.se" target="_blank">BLOGG.<i class="fa-solid fa-pen-nib"></i> </a>
+              <a href="https://www.learnpoint.se" target="_blank">LEARNPOINT.<i class="fa-solid fa-graduation-cap"></i> </a>
+    </div>  
+          <!-- här har jag skapat en länklista med hjälp av "a href" och "target" för att kunna öppna länkarna i en ny flik.
+          jag ville att länkarna skulle sitta under headern och centreras med ett mellanrum mellan varandra. Detta kan jag
+        göra eftersom jag tilldelat den en klass och kan därför enskilt ge vissa attribut till mina länkar i css -->
+    <section><!-- jag vill inte ha en h1 här utan tyckte det blev snyggare utan för estetiken på hemsidan-->
+       <div class="content">
+        <p>Hej och välkommen! <br> Jag har nedan skapat en sida med hjälp av html och css för att ni ska kunna
+          lära känna mig lite bättre. Min storsta hobby är konst och att måla med hjälp av olika metoder.
+        </p>
+       </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="left-box">
+          <p>KORT FAKTA OM MIG <i class="fa-solid fa-palette"></i></p>
+          <ul>
+            <li>Jag har målat i över 15 år.</li>
+            <li>Realism och abstrakt konst är roligast.</li>
+            <li>Jag intresserar mig för kodning.</li>
+            <li>Målning är min form av terapi.</li>
+            <li>Jag vill jobba estetiskt.</li>
+           </ul>
+        </div>
+        <!-- i mina boxar som jag skapat nedan ville jag ha en lista med fakta. därför la jag den listan med
+        hjälp av "ul" och "li". antalet punker blir därför baserat på hur många olika "li" kommandon
+        jag skriver in. här blev det 5 punkter-->
+        <div class="middle-box">
+          <p>BILD PÅ MIG<i class="fa-solid fa-palette"></i></p>
+          <img id="Mittenbild" src="bilder/linkedin.jpg" alt="mittenbild">
+        </div>
+        <!-- här ville jag ha en bild på mig själv. jag valde att lägga in den i en box för att kunna centrera
+          samt tilldela den attribud i css enskilt. -->
+        <div class="right-box">
+          <h3>LÄS MER<i class="fa-solid fa-palette"></i></h3>
+          <p>Nedan kan ni se en liten del av min portfolio där jag målat 
+            med hjälp av olika metoder så som till exempel akryl, vattenfärg, blyerts
+            men även mycket digitalt. Jag fokuserar mycket på ansikten och människor i mina verk.
+            Under en period bodde jag i Belgien och livnärde mig på att sälja canvasmålningar. 
+            När jag är färdigutbildad som front end-utvecklare vill jag jobba med webbdesign och
+            kunna koda bland annat hemsidor och appar. Jag tycker att det här är väldigt
+            roligt och utvecklande på många plan.
+          </p>
+        </div>
+      </div>
+    </section>
+        <!--Sista boxen skulle ha en rubrik och en en text under. Jag valde därför att skriva in rubriken i "h3" för att
+        kunna göra den så stor som jag vill i boxen -->
+    <section>
+      <div class="middlecontent">
+          <div class="center-container"> <!--jag valde att inte byta namn på denna till left container för att jag
+          i början hade allt innehåll centrerat-->
+            <h3> MINA MÅLNINGAR </h3>
+            <p >Bilderna du ser till höger på sidan är några få av de teckningar och målningar som
+              jag gjort under åren. Det tar mellan 10-30 timmar för mig att måla dessa beroende på 
+              detaljer och storlek. Några teckningar har jag gjort med blyerts på vanligt papper i A4
+              storlek. Några är gjorda digitalt på min ipad och några har jag gjort med akryl, 
+              olja och vattenfärg på canvas i olika storlekar. På en av bilderna kan man se
+              mig sitta och måla på golvet. Om du scrollar ner så ser man alla bilder.
+            </p>
+            <p> TIPS: Om du håller pekaren på bilderna förstoras de upp så man kan se mer detaljer.</p> <!--pga en,
+               enligt mig snyggare design på hemsidan gjorde jag två p taggar för att dela upp innehållet på
+               ett snyggare sätt.-->
+           </div>
+            <!-- här ville jag först skriva en text som berättar om bilderna jag lagt in men jag ville att texten
+              skulle vara en del av min sektion och min klass så jag kan sätta den delen till vänster-->
+          <div class="right-container">
+            <img class="thumbnail" src="bilder/blyertskyle.jpg" alt="Bild 1">
+            <img class="thumbnail" src="bilder/blyertslips.jpg" alt="Bild 2">
+            <img class="thumbnail" src="bilder/digitaltjej.jpg" alt="Bild 3">
+            <img class="thumbnail" src="bilder/blyertsman.jpg" alt="Bild 4">
+            <img class="thumbnail" src="bilder/digitalbutterfly2.jpg" alt="Bild 5">
+            <img class="thumbnail" src="bilder/jagmålar.jpg" alt="Bild 6"> 
+            <img class="thumbnail" src="bilder/artsmoking.jpg" alt="Bild 7">
+            <img class="thumbnail" src="bilder/digitalkendall.jpg" alt="Bild 8">
+          </div>
+        </div>
+        <!--dessa bilder ville jag skulle sitta till höger i min kod och sedan styla den i css.
+        -->        
+    </section> 
+    <section>
+      <div class="endwords">
+       <h4>AVSLUTANDE ORD</h4> 
+       <p>Tack för att du tagit dig tiden att kolla på min hemsida. <br>
+        Önskar du att se mer av min portfolio kan man följa mig på diverse sociala medier. 
+        <br> Klicka på "kontakt" om du undrar någonting.
+      <br> Tack för att du tittat! </p> 
+      <!--Ännu en klass för att jag inte vill att "h3" ska ha samma attribut som det jag skrivit innan och då kan jag 
+      tilldela det specifikt i en klass istället.-->
+      <div class="KONTAKT">
+        <a href="kontakta.html" target="_blank">KONTAKTA MIG. <i class="fa-solid fa-palette"></i></a>
+      </div> <!-- gör en länk till en ny sida med kontaktinformation-->
+      </div>
+    </section>  
+</main>
+<section>
+  <div class="footer">
+<footer>
+<p>&copy; Ellinor Jansson Lande.</p> <!--jag ville ha en snygg footer med en stilren design och mitt namn i-->
+</footer> 
+</div><!--Jag har medvetet valt att inte ha en rubrik i detta fält. därför ges en varning i koden-->
+</section>
+</body>
+</html>
+
+
